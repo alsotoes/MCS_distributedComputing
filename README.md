@@ -7,9 +7,12 @@
 Queue consumer and producer (queue called *springfield*)
 =======
 
+![alt text](https://github.com/alsotoes/MCS_distributedComputing/blob/master/images/queue_activemq.png)
+
+
 * Generates argv (5 in the example) messages using random values from 0 to 1000
 
-	$ python3 queue_producer.py 5  
+	$ python3 **queue_producer.py** 5  
         [+] Sending message in springfield queue  
                 --> sended message 61  
                 --> sended message 29  
@@ -20,7 +23,7 @@ Queue consumer and producer (queue called *springfield*)
                   
 * Reads messages in springfield queue, acts as a server and reads any unread message in the queue before the script starts.
 
-	$ python3 queue_consumer.py    
+	$ python3 **queue_consumer.py**    
         [+] Receiving message from springfield queue  
                 --> received a message 61  
                 --> received a message 29  
@@ -32,9 +35,12 @@ Queue consumer and producer (queue called *springfield*)
 PubSub topic based consumer and producer
 =======
 
+![alt text](https://github.com/alsotoes/MCS_distributedComputing/blob/master/images/topic_activemq.png)
+
+
 * Generates 100 random values from 0 to 1000 and publish, also randomly, between 3 topis (homero, bart, lisa).
 
-	$ python3 pubsub_producer.py 100  
+	$ python3 **pubsub_producer.py** 100  
          [+] Publishing message 162 in lisa topic  
          [+] Publishing message 199 in bart topic  
          [+] Publishing message 892 in bart topic  
@@ -49,7 +55,7 @@ PubSub topic based consumer and producer
 
 * Reads from specific topic (bart in this example)
 
-    $ python3 pubsub_consumer.py bart   
+    $ python3 **pubsub_consumer.py** bart   
          [+] Using topic: bart   
                   received a message 889   
                   received a message 411   
