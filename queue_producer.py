@@ -16,7 +16,7 @@ def main():
 
     print("[+] Sending message in {} queue".format(queue))
     for count in range(int(sys.argv[1])):
-        value = str(random.randrange(100))
+        value = str(random.randrange(1000))
         conn.send(body=value, destination='/queue/'+queue)
         print(" --> sended message {}".format(value))
 

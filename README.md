@@ -20,7 +20,7 @@ Queue consumer and producer (queue called *springfield*)
                   
 * Reads messages in springfield queue, acts as a server and reads any unread message in the queue before the script starts.
 
-	$ python3 queue_consumer.py 
+	$ python3 queue_consumer.py    
         [+] Receiving message from springfield queue  
                 --> received a message 61  
                 --> received a message 29  
@@ -47,4 +47,17 @@ PubSub topic based consumer and producer
          ...  
          ...  
 
+* Reads from specific topic (bart in this example)
 
+    $ python3 pubsub_consumer.py bart   
+         [+] Using topic: bart   
+                  received a message 889   
+                  received a message 411   
+                  received a message 659   
+                  received a message 993   
+                  received a message 480   
+                  received a message 369   
+                  received a message 243   
+                  received a message 928   
+                  ...
+                  ...
