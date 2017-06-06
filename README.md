@@ -40,7 +40,7 @@ PubSub topic based consumer and producer
 ![alt text](https://github.com/alsotoes/MCS_distributedComputing/blob/master/images/topic_activemq.png)
 
 
-* Generates 100 random values from 0 to 1000 and publish, also randomly, between 3 topis (homero, bart, lisa).
+* Generates 100 random values from 0 to 1000 and publish, also randomly, between 3 topics (homero, bart, lisa).
 
 	$ python3 **pubsub_producer.py** 100  
          [+] Publishing message 162 in lisa topic  
