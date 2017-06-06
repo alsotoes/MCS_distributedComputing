@@ -1,6 +1,8 @@
 # MCS_distributedComputing
 
 * Python code using "stomp.py" Python client library for accessing messaging servers using the STOMP protocol.
+* To install use $ pip install -i https://pypi.python.org/simple stomp.py
+* Examples using python3, activemq 5.14.4 and Java 1.8.0
 
 
 
